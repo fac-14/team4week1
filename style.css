@@ -1,8 +1,28 @@
 
 
 header {
+    height:180px;
     margin: 0 auto;
-    width: 80%;
+    position: relative;
+    width: 100%;
     border: 1px solid green;
 }
+.logo{
+  float:left;
+  overflow:auto;
+}
+ .banner_section h1{
+  font-size: 30px;
+  position : relative;
+  margin: auto;
+}
+.container{
+  width:80%;
+  margin:0 auto;
+}
 
+
+/*.logo img{
+  width:
+  height:50%;
+}*/
