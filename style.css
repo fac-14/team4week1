@@ -104,6 +104,18 @@ li a:active {
     margin:0 auto;
   }
 
+  .quarter {
+    display: flex;
+    justify-content: space-around;
+    border:1px solid red;
+    }
+    .photo {
+    width: 15%;
+    }
+    .caption {
+    text-align: center;
+    width: 100%;
+    }
 
 /*MEDIA QUERIES*/
 
