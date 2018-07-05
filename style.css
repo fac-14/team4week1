@@ -1,10 +1,14 @@
 * {
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> master
     margin: 0;
     padding: 0;
   }
 
-
+/*
 header {
     height:180px;
     margin: 0 auto;
@@ -12,8 +16,88 @@ header {
     width: 100%;
     border: 1px solid green;
 }
+<<<<<<< HEAD
 button:hover {
   box-shadow: 0px 0px 1px 2px black;
+=======
+*/
+
+
+/*Remember to include Google font  link in project index page
+Font family used for draft:
+<link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600,600i" rel="stylesheet"> 
+*/
+
+
+
+/*HEADER*/
+
+/*FOR SCREENS SMALLER THAN 600px - DISPLAY MENU VERTICALLY*/
+
+.header-container{
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border-bottom: 2px solid #483D8B;
+}
+
+.logo{
+	margin-left: 0.25rem;
+}
+
+nav{
+	display: flex;
+	margin: 1.5rem;
+}
+
+header ul {
+	display: flex;
+	flex-flow: row wrap;
+	list-style-type: none;
+}
+
+header ul li {
+display: inline-block;
+padding: 0.5rem;
+font-family: 'Nunito:400', sans-serif;		/*Find out how to use different Google font styles in same family*/
+font-size: 1.5rem;
+}
+
+header ul li a {
+text-decoration: none;
+color: #483D8B;
+}
+
+li a:active {
+ color: #483D8B;
+ font-weight: 400;
+ }
+ 
+ li a:hover {
+     color: #FFA500;
+ }
+ 
+*/
+
+/*FOR SCREENS OVER 600px*/
+
+@media screen and (min-width:600px) {
+   
+ .header-container {
+		display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    nav {
+        justify-content: flex-end;
+        margin: 0 1rem 0 0;
+}
+>>>>>>> master
 }
 
 .logo{
@@ -82,7 +166,7 @@ button:hover {
     font-size: 20px;
 }
 
-    }
+}
 
 
 @media all and (max-width:480px) {
