@@ -4,17 +4,6 @@
     padding: 0;
   }
 
-/*
-header {
-    height:180px;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    border: 1px solid green;
-}
-*/
-
-
 /*Remember to include Google font  link in project index page
 Font family used for draft:
 <link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600,600i" rel="stylesheet"> 
@@ -49,7 +38,7 @@ header ul {
 }
 
 header ul li {
-display: inline-block;
+display: flex;
 padding: 0.5rem;
 font-family: 'Nunito:400', sans-serif;		/*Find out how to use different Google font styles in same family*/
 font-size: 1.5rem;
