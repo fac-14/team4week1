@@ -1,32 +1,14 @@
-
-/*
-header {
-    height:180px;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    border: 1px solid green;
-}
-*/
-
-
-/*Remember to include Google font  link in project index page
-Font family used for draft:
-<link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600,600i" rel="stylesheet"> 
-*/
-
-
-
-/*HEADER*/
+/*CSS STYLE SHEET - MOBILE FIRST APPROACH*/
 
 /*FOR SCREENS SMALLER THAN 600px - DISPLAY MENU VERTICALLY*/
 
+/*HEADER INCLUDING NAV BAR AND LOGO*/
 .header-container{
 	display: flex;
 	flex-direction: column;
 	border-bottom: 3px solid #483D8B;
 }
-/*access div class so logo is centrered on small screens */
+
 .logo {
     position: relative;
     text-align: center;
@@ -43,16 +25,15 @@ nav{
 
 header ul {
 	display: flex;
-	flex-flow: column;
     list-style-type: none;
 }
 
 header ul li {
 display: inline-block;
 padding: 0.5rem;
-font-family: 'Nunito:400', sans-serif;		/*Find out how to use different Google font styles in same family*/
-font-size: 1.3rem;
-letter-spacing: 0.05rem;
+font-family: 'Nunito:400', sans-serif;
+font-size: 1.1rem;
+letter-spacing: 0.2rem;
 }
 
 header ul li a {
@@ -69,6 +50,7 @@ li a:active {
      color: #FFA500;
  }
  
+ /*BANNER SECTION INCLUDING MAIN HEADLINES AND HERO IMAGE*/
 .banner_section{
     width: 100%;
     min-height: 300px;
@@ -82,9 +64,8 @@ li a:active {
  .banner_section h1{    
     font-family: 'Wendy One', sans-serif;
     position: relative;
-    top: 30%;
-    text-align: center;
     font-size: 2rem;
+    padding-top: 50px;
     color: white;
     text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
 }
@@ -92,30 +73,33 @@ li a:active {
 .banner_section h2{
     font-family: 'Wendy One', sans-serif;
     position: relative;
-    text-align: center;
-    top: 50%;
+    float: right;
     font-size: 1.7rem;
-    color: white;
+    color: #FFA500;
     text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
 }
 
+/*TEAM SECTION*/
 .container {
     width:80%;
     margin:0 auto;
-  }
+}
 
-  .quarter {
+.quarter {
     display: flex;
     justify-content: space-around;
     border:1px solid red;
-    }
-    .photo {
+}
+
+.photo {
     width: 15%;
-    }
-    .caption {
+}
+
+.caption {
     text-align: center;
     width: 100%;
     }
+
 
 /*MEDIA QUERIES*/
 
@@ -123,35 +107,50 @@ li a:active {
 
 @media screen and (min-width:600px) {
    
-    .header-container {
-           display: flex;
-           flex-flow: row;
-           justify-content: space-between;
-       }
+ .header-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    }
    
-       .logo {
-           display: inline-block;
-       }
-       .logo img{
-        width: 100%;
-    }
-       nav {
-           display: flex;
-           justify-content: flex-end;
-           margin: 0 0 0 0;
-   }
-
-     header ul {
-        display: flex;
-	    flex-flow: row;
-	    list-style-type: none;
+ .logo {
+    display: inline-block;
     }
 
-    header ul li {
-        display: inline-block;
-        font-family: 'Nunito:400', sans-serif;		/*Find out how to use different Google font styles in same family*/
-        font-size: 1.3rem;
-        letter-spacing: 0.07rem;
-        }
+ .logo img{
+    width: 100%;
+    }
+
+ nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 0 0;
+    }
+
+ header ul {
+    display: flex;
+	flex-flow: row;
+	list-style-type: none;
+    }
+
+ header ul li {
+    display: inline-block;
+    font-family: 'Nunito:400', sans-serif;		/*Find out how to use different Google font styles in same family*/
+    font-size: 1.3rem;
+    letter-spacing: 0.07rem;
+    }
+    
+    .banner_section{    
+    min-height: 400px;
+    }
+
+    .banner_section h1{    
+    font-size: 3rem;
+    }
+    
+    .banner_section h2{
+    font-size: 2.1rem;
+    }
+    
 }
 
