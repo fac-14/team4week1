@@ -1,5 +1,5 @@
 * {
-    
+
     margin: 0;
     padding: 0;
   }
@@ -11,6 +11,9 @@ header {
     position: relative;
     width: 100%;
     border: 1px solid green;
+}
+button:hover {
+  box-shadow: 0px 0px 1px 2px black;
 }
 
 .logo{
@@ -28,14 +31,14 @@ header {
     background-position: center;
 }
 
- .banner_section h1{    
+ .banner_section h1{
     font-family: 'Wendy One', sans-serif;
     position: relative;
     top: 30%;
     left: 5%;
     font-size: 70px;
     color: white;
-    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
 }
 
 .banner_section h2{
@@ -45,18 +48,30 @@ header {
     left: 40%;
     font-size: 30px;
     color: white;
-    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
 
 }
 
 .container {
+  height:700px;
     width:80%;
     margin:0 auto;
   }
+.quarter {
+  display: flex;
+  justify-content: space-around;
+  border:1px solid red;
+}
 
-
+.photo {
+  width: 15%;
+}
+.caption {
+  text-align: center;
+  width: 100%;
+}
 @media all and (max-width:768px) {
- 
+
 .banner_section{
         height: 260px;
 }
