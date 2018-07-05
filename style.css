@@ -9,9 +9,23 @@ body {
 }
 
 .header-container{
-	display: flex;
+    display: flex;
     flex-direction: column;
+    background-color: white;
+    z-index: 1;
 }
+
+/*Add sticky class to header-container with JS when it reaches its scroll position*/
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header-container gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
 .logo {
     position: relative;
@@ -56,6 +70,7 @@ li a:active {
  
  /*BANNER SECTION INCLUDING MAIN HEADLINES AND HERO IMAGE*/
 .banner_section{
+    padding-top: 8rem;
     width: 100%;
     min-height: 300px;
     height: auto;
