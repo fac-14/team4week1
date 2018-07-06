@@ -81,7 +81,7 @@ li a:active {
     font-family: 'Wendy One', sans-serif;
     position: relative;
     font-size: 2rem;
-    padding-top: 50px;
+    padding-top: 100px;
     color: white;
     text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black; 
 }
@@ -156,9 +156,9 @@ li a:active {
     text-align: center;
     width: 100%;
     font-size: 2rem;
-    color: #FFA500;
+    color: #E47E22;
     letter-spacing: 0.15rem;
-    text-shadow: 1px black;
+    text-shadow: 2px 2px 0 black;
     
 
 }
@@ -217,7 +217,7 @@ input[type=text], select, textarea{
   }
     
   form li button{
-    background-color: #FFA500;
+    background-color: rgb(224, 130, 6);
     margin-top: 0.5rem;
 	margin-left: auto;
 	padding: 0.5rem;;
