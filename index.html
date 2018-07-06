@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Update document title-->
+
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -11,7 +11,7 @@
 </head>
 <body>
   
-  <header class="header-container">
+   <header class="header-container">
               <div class="logo">
                 <a href="index.html" title="TEAM4 home page"><img src="image/team4logo.png"  alt="our_logo"></a>
               </div>
@@ -31,7 +31,6 @@
                <h1>Full stack development</h1>
                <h2>Since 2 days ago</h2>
           </section>
-
 
     <section class="team" id="team">
       <h1>Meet the team</h1>
@@ -57,7 +56,8 @@
       <h3>Team of certified geniuses, here for your web development needs.</h3>
     </section>
 
- <section class="languages">
+  <section class="languages">
+
     <h2>What languages we can use ...</h2>
 
   <div class="language_icons" id="languages">
@@ -84,35 +84,37 @@
     </figure>
     </div>
 
-    <h2>Contact us</h2>
+    <h2>Contact us</h2><a name="contact_us"></a>
   </section>
-
-  <form id="contact">
-      <ul id="form">
-        <li class="small-box">
-          <label for "first-name">Your first name</label>
-          <input type="text" class="first-name" placeholder="Enter your first name">
+  
+  <form id="contact" tabindex="2">
+      <ul id='form'>
+        <li>
+          <label for 'first-name'>Your first name</label>
+          <input type='text' class='small-box'  placeholder='Enter your first name'>
         </li>
         <li>
-          <label for "last-name">Your last name</label>
-          <input type="text" class="last-name" placeholder="Enter your last name">
+          <label for 'last-name'>Your last name</label>
+          <input type='text' class='small-box' placeholder='Enter your last name'>
         </li>
         <li>
-          <label for "email">Your email here</label>
-          <input type="text" class="email-address" placeholder="Enter your email address">
+          <label for 'email'>Your email here</label>
+          <input type='text' class='small-box' placeholder='Enter your email address'>
           <li>
-          <label for "phone-number">Your phone number</label>
-          <input type="text" class="phone-number" placeholder="Enter your phone number">
+          <label for 'phone-number'>Your phone number</label>
+          <input type='text' class='small-box' placeholder='Enter your phone number'>
         </li>
-      <li class="text-box">
-          <label for "message">Please enter your request here</label>
-          <input type="text" id="message-box" placeholder="Please type your request here">
+      <li>
+          <label for 'message'>Please enter your request here</label>
+          <textarea id='message-box' placeholder='Please type your request here'></textarea>
+
         </li>
         <li>
           <button>Submit</button>
         </li>
         </ul>
     </form>
+
 
 
     <script>
@@ -127,9 +129,11 @@
       }
       header.addEventListener('scroll', stickyMenu());
       </script>
+  
+  <br>
 
    <footer>
-
+Week 1, Team 4. All graphics used are copyright-free
    </footer>
 </body>
 </html>
