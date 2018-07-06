@@ -7,7 +7,6 @@
     <title>Team Coolest Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
-    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
 </head>
 <body>
@@ -114,6 +113,19 @@
         </ul>
     </form>
 
+
+    <script>
+      const header = document.querySelector('.header-container');
+     
+      function stickyMenu () {
+        if (window.pageYOffset >= 0) {
+          header.classList.add("sticky")
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      header.addEventListener('scroll', stickyMenu());
+      </script>
  
    <footer>
 
