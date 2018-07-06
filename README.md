@@ -1,2 +1,10 @@
 # team4week1
-A portfolio website of developer team
+
+# Purpose
+Project-website for team of developers
+
+# Contributors
+Simon, Sangita, Harry, Artemis
+
+# Licence
+Public
